@@ -7,7 +7,9 @@
   <body>
     <h1>Welcome to my Javascript HW!</h1>
 
-
+    <ul id="movies">
+      Here are my favorite movies
+    </ul>
 
     <script
   src="https://code.jquery.com/jquery-3.1.1.min.js"
@@ -32,6 +34,12 @@
       }
     }
     console.log(sixWords)
+
+    for (var i = 0; i < favMovies.length; i++) {
+      var movie = $("<li>").text(favMovies[i]);
+        $("#movies").append(movie);
+      };
+
   </script>
   </body>
 </html>
